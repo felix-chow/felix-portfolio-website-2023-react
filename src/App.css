@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+body {
+  color: #fff;
+  background-color: rgba(11, 11, 13, 1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  line-height: 2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p, h2, h3 {
+  margin-left: 130px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+  font-family: 'Britannic', serif;
 }
 
-.App-link {
-  color: #61dafb;
+/* HashLink:hover {
+  color: #000;
+} */
+
+.skills {
+  margin-left: 6rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#home {
+  background-image: url(/public/images/pexels-photo3_1880x1253.jpeg);
+  background-size: 1253px 835px;
+  width: 1253px;
+  height: 835px;
+  border-radius: 10%;
+  margin-left: 100px;
+}
+
+#home h2, h3, p {
+  text-shadow: 8px 7px 7px #000;
+}
+
+#home h2 {
+  font-size: 60px;
+  padding-top: 40px;
+  margin: 60px 0 0 200px;
+}
+
+#home h3 {
+  font-size: 40px;
+  margin: 40px 0 0 200px;
+  line-height: 0.125;
+}
+
+#home p {
+  margin: 30px 0 0 200px;
+  width: 34%;
+}
+
+.skills ul li {
+  list-style-type: none;
 }
