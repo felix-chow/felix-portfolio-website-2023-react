@@ -2,7 +2,11 @@ import Bio from './Bio'
 
 const Home = () => {
     return (
-        <Bio />
+        <>
+            <Bio />
+            <p>This is a test.</p>
+
+        </>
     )
 }
 
