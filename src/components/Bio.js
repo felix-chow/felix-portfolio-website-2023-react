@@ -4,7 +4,7 @@ const Bio = () => {
             <section id="home">
                 <h2>Felix Chow</h2>
                 <h3>Full Stack Developer</h3>
-                <p>A friendly web developer who loves to learn new things, and is a great communicator with a touch of creativity. Good written and verbal communication skills. Highly motivated, fast learner, self-starter and team player. Loves everything about ice hockey, singing and playing instruments, and exploring the history of various places.</p>
+                <p>Felix Chow is a web designer. He provides web design services to help people reach their financial goal or pursue other interests. He is also a stock investor. In his free time, he is a singer-songwriter who plays guitar and piano, and writes and produces music.</p>
             </section>
         </div>
     )

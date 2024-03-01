@@ -7,6 +7,10 @@ p {
   line-height: 2;
 }
 
+.p-2 p {
+  width: 500px;
+}
+
 p, h2, h3 {
   margin-left: 130px;
 }
