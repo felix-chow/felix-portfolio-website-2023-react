@@ -3,13 +3,13 @@ import { Link, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import { HashLink } from 'react-router-hash-link';
-import { hover } from '@testing-library/user-event/dist/hover';
 
 const App = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: "#000000" }}>
         <div className="container-fluid">
+          <a href="https://felix-chow.netlify.app/" rel="home"><img style={{marginLeft: "100px"}} width="52" height="52" src="../images/Black-Pink-Bold-Elegant-Monogram-Personal-Brand-Logo-1-e1681776583474.png"/></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>

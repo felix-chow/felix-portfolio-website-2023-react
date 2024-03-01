@@ -8,7 +8,7 @@ p {
 }
 
 .p-2 p {
-  width: 500px;
+  width: 420px;
 }
 
 p, h2, h3 {
@@ -60,3 +60,7 @@ h2 {
 .skills ul li {
   list-style-type: none;
 }
+
+/* #ecommerce p {
+  width: 250px
+} */
