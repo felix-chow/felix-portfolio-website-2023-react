@@ -9,7 +9,7 @@ const App = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: "#000000" }}>
         <div className="container-fluid">
-          <a href="https://felix-chow.netlify.app/" rel="home"><img alt="" style={{marginLeft: "100px"}} width="52" height="52" src="../images/Black-Pink-Bold-Elegant-Monogram-Personal-Brand-Logo-1-e1681776583474.png"/></a>
+          <a href="https://felix-chow.netlify.app/" rel="home"><img alt="" style={{ marginLeft: "100px" }} width="52" height="52" src="../images/Black-Pink-Bold-Elegant-Monogram-Personal-Brand-Logo-1-e1681776583474.png" /></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -21,8 +21,10 @@ const App = () => {
                 </HashLink>
               </li>
               <li className="nav-item dropdown m-2">
-                <Link className="nav-link dropdown-toggle" style={{ marginRight: 150, color: "white" }} href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><input type="button">Projects</input>
+                <Link className="nav-link dropdown-toggle" style={{ marginRight: 150, color: "white", cursor: "pointer" }} to="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projects
                 </Link>
+
                 <ul className="dropdown-menu" style={{ backgroundColor: "#000000" }} aria-labelledby="navbarDropdownMenuLink">
                   <li><HashLink className="dropdown-item" smooth to={"/#ecommerce"} style={{ color: "white" }}>
                     E-commerce Web Development
