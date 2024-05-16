@@ -26,6 +26,9 @@ const App = () => {
                 </Link>
 
                 <ul className="dropdown-menu" style={{ backgroundColor: "#000000" }} aria-labelledby="navbarDropdownMenuLink">
+                  <li><HashLink className="dropdown-item" smooth to={"/#web-dev"} style={{ color: "white" }}>
+                    Web Development
+                  </HashLink></li>
                   <li><HashLink className="dropdown-item" smooth to={"/#ecommerce"} style={{ color: "white" }}>
                     E-commerce Web Development
                   </HashLink></li>
