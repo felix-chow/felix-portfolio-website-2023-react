@@ -21,8 +21,7 @@ const App = () => {
                 </HashLink>
               </li>
               <li className="nav-item dropdown m-2">
-                <Link className="nav-link dropdown-toggle" style={{ marginRight: 150, color: "white" }} href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Projects
+                <Link className="nav-link dropdown-toggle" style={{ marginRight: 150, color: "white" }} href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><input type="button">Projects</input>
                 </Link>
                 <ul className="dropdown-menu" style={{ backgroundColor: "#000000" }} aria-labelledby="navbarDropdownMenuLink">
                   <li><HashLink className="dropdown-item" smooth to={"/#ecommerce"} style={{ color: "white" }}>
