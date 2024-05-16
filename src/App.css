@@ -11,7 +11,9 @@ p {
   width: 420px;
 }
 
-p, h2, h3 {
+p,
+h2,
+h3 {
   margin-left: 130px;
 }
 
@@ -36,7 +38,9 @@ h2 {
   margin-left: 100px;
 }
 
-#home h2, h3, p {
+#home h2,
+h3,
+p {
   text-shadow: 8px 7px 7px #000;
 }
 
@@ -61,6 +65,51 @@ h2 {
   list-style-type: none;
 }
 
+#Ecommerce
+
+.e-commerce-section {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
 /* #ecommerce p {
   width: 250px
 } */
+
+@media screen and (min-width: 1175px) {
+  .cloud-commerce-desc {
+    padding-right: 100px;
+    /* Adjust as needed */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cloud-commerce-desc {
+      padding-right: 50px; /* Further adjust for smaller screens */
+  }
+  .cafe-paradise-desc {
+      padding-right: 50px; /* Adjust for smaller screens */
+  }
+}
+
+/* Adjust heading font sizes for different screen widths */
+@media screen and (max-width: 1127px) {
+  h2 {
+      font-size: 32px; /* Adjust font size to prevent wrapping */
+  }
+  h3 {
+      font-size: 28px; /* Adjust font size to prevent wrapping */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+      font-size: 28px; /* Further adjust for smaller screens */
+  }
+  h3 {
+      font-size: 24px; /* Further adjust for smaller screens */
+  }
+}

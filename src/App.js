@@ -28,7 +28,6 @@ const App = () => {
                   <li><HashLink className="dropdown-item" smooth to={"/#ecommerce"} style={{ color: "white" }}>
                     E-commerce Web Development
                   </HashLink></li>
-                  <li><HashLink className="dropdown-item" smooth to={"/#web-dev"} style={{ color: "white" }}>Web Development</HashLink></li>
                 </ul>
               </li>
             </ul>
