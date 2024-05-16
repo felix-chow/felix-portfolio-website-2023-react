@@ -9,7 +9,7 @@ const App = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: "#000000" }}>
         <div className="container-fluid">
-          <a href="https://felix-chow.netlify.app/" rel="home"><img alt="" style={{marginLeft: "100px"}} width="52" height="52" src="../images/Black-Pink-Bold-Elegant-Monogram-Personal-Brand-Logo-1-e1681776583474.png" alt=""/></a>
+          <a href="https://felix-chow.netlify.app/" rel="home"><img alt="" style={{marginLeft: "100px"}} width="52" height="52" src="../images/Black-Pink-Bold-Elegant-Monogram-Personal-Brand-Logo-1-e1681776583474.png"/></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
