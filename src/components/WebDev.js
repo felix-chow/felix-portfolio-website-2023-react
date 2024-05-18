@@ -5,7 +5,7 @@ const WebDev = () => {
                 <h3>Cafe paradise</h3>
 
                 {/* Start of three-column grid */}
-                <div className="d-flex flex-row mb-3">
+                <div className="d-flex flex-column flex-md-row mb-3">
                     <div className="p-2" style={{ margin: "10px 5px 0 110px" }}>
                         <img src="../images/moving-steam-coffee.gif" alt="steaming coffee" className="card rounded float-end" width="371px" />
                     </div>

@@ -1,9 +1,9 @@
-const WebDev = () => {
+const EcommerceWebDev = () => {
     return (
         <>
             <hr width="70%" style={{ margin: "auto", marginTop: "100px" }} />
 
-            <div className="d-flex flex-row mb-3">
+            <div className="d-flex flex-column flex-md-row mb-3">
                 <div className="w-50 p-3" id="ecommerce" style={{ marginTop: "150px", marginBottom: "150px" }}>
                     <h2 style={{ fontSize: 40 }}>E-commerce Web Development</h2>
                     <h3>Cloud Commerce Hub</h3>
@@ -20,4 +20,4 @@ const WebDev = () => {
     )
 }
 
-export default WebDev;
+export default EcommerceWebDev;

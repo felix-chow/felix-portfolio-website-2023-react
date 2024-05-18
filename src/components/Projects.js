@@ -1,13 +1,13 @@
-import EcommerceWebDev from "./WebDev";
-import WebDev from "./EcommerceWebDev";
+import WebDev from "./WebDev";               // Correctly importing WebDev
+import EcommerceWebDev from "./EcommerceWebDev"; // Correctly importing EcommerceWebDev
 
 const Projects = () => {
     return (
         <>
-            <EcommerceWebDev />
             <WebDev />
+            <EcommerceWebDev />
         </>
-    )
+    );
 }
 
 export default Projects;
