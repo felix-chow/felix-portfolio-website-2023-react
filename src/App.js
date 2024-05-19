@@ -1,11 +1,12 @@
-import './App.css';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'; // Ensure to import your custom CSS
 import Home from './components/Home';
 import Projects from './components/Projects';
-import { HashLink } from 'react-router-hash-link';
-import { ViewportProvider } from './components/ViewportContext';
-import ('bootstrap');
+import { ViewportProvider } from './components/ViewportProvider';
 
 const App = () => {
   return (
@@ -25,15 +26,15 @@ const App = () => {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbar-nav" />
             <Navbar.Collapse id="navbar-nav">
-              <Nav className="ms-auto">
+              <Nav className="ms-auto"> {/* Use ms-auto for proper alignment */}
                 <Nav.Link as={HashLink} smooth to="/#home" style={{ color: 'white' }}>
                   Home
                 </Nav.Link>
-                <NavDropdown title="Projects" id="navbarScrollingDropdown" style={{ color: 'white' }}>
-                  <NavDropdown.Item as={HashLink} smooth to="/#web-dev" style={{ color: 'white' }}>
+                <NavDropdown title={<span style={{ color: 'white' }}>Projects</span>} id="navbarScrollingDropdown" className="custom-nav-dropdown">
+                  <NavDropdown.Item as={HashLink} smooth to="/#web-dev" style={{ backgroundColor: 'black', color: 'white' }}>
                     Web Development
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={HashLink} smooth to="/#ecommerce" style={{ color: 'black' }}>
+                  <NavDropdown.Item as={HashLink} smooth to="/#ecommerce" style={{ backgroundColor: 'black', color: 'white' }}>
                     E-commerce Web Development
                   </NavDropdown.Item>
                 </NavDropdown>

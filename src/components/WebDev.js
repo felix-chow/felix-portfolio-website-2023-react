@@ -1,3 +1,7 @@
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import coffeeImage from '../assets/images/moving-steam-coffee.gif';
+import cafeMenu from '../assets/images/cafe-paradise-menu-2-1.jpg'
 const WebDev = () => {
     return (
             <div className="w-50 p-2" id="web-dev" style={{ marginTop: "100px" }}>
@@ -6,8 +10,8 @@ const WebDev = () => {
 
                 {/* Start of three-column grid */}
                 <div className="d-flex flex-column flex-md-row mb-3">
-                    <div className="p-2" style={{ margin: "10px 5px 0 110px" }}>
-                        <img src="../images/moving-steam-coffee.gif" alt="steaming coffee" className="card rounded float-end" width="371px" />
+                    <div className="p-2">
+                        <img src={coffeeImage} alt="steaming coffee" className="steaming-coffee card rounded float-end" />
                     </div>
 
                     <div className="p-2">
@@ -18,7 +22,7 @@ const WebDev = () => {
                         <img src="../images/cafe-paradise-menu-2-1.jpg" alt="cafe paradise menu" className="card rounded float-end" width="290px"/>
                     </div> */}
                     <div className="p-2">
-                        <img src="../images/cafe-paradise-menu-2-1.jpg" alt="cafe paradise menu" className="card rounded float-end" width="371px" />
+                        <img src={cafeMenu} alt="cafe paradise menu" className="cafe-menu card rounded float-end" />
                     </div>
 
                 </div>

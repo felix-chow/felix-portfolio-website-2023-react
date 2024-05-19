@@ -3,15 +3,21 @@
 }
 
 /* Mobile nav bar responsiveness */
-img, a, .navbar {
-  max-width: 100%;
+a, .navbar {
   height: auto;
   display: block;
 }
 
-/* a {
-  color: #fff;
-} */
+.banner-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.steaming-coffee, .cafe-menu {
+  max-width: 400px;
+  height: auto;
+  margin: 20px;
+}
 
 body {
   color: #fff;
@@ -31,10 +37,25 @@ body {
 
 .navbar-collapse{
   width: 100%;
+  justify-content: right;
 }
 
 .container-fluid {
   padding: 0 15px; /* Adjust padding to prevent overflow */
+}
+
+.custom-nav-dropdown .dropdown-menu {
+  background-color: black !important;
+  border: none !important;
+  width: auto;
+  white-space: normal;
+}
+
+.custom-nav-dropdown .dropdown-item {
+  color: white !important;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 p {
@@ -64,7 +85,6 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* height: calc(165vh - 80px); */
   min-height: 100vh; /* Ensure it takes at least the full viewport height */
   padding: 20px;
   padding-top: 60px;
@@ -86,13 +106,6 @@ h3 {
   align-items: center;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-  
-  /* Code that doesn't breaks responsiveness */
-  /* background-size: 1253px 835px; */
-  /* width: 1253px;
-  height: 835px; */
-  /* margin-left: 100px; */
 }
 
 #home-content {
@@ -124,29 +137,6 @@ h3 {
   max-width: 60%;
 }
 
-/* 
-
-#home h2 {
-  font-size: 60px;
-  padding-top: 40px;
-  margin: 60px 0 0 200px;
-} */
-
-/* #home h3 {
-  font-size: 40px;
-  margin: 40px 0 0 200px;
-  line-height: 0.125;
-} */
-
-/* #home p {
-  margin: 30px 0 0 200px;
-  width: 34%;
-} */
-
-.skills ul li {
-  list-style-type: none;
-}
-
 @media (max-width: 768px) {
   #home-content h2 {
     font-size: 6vw; /* Use viewport width for responsive size (6% of the viewport width) */
@@ -164,3 +154,18 @@ h3 {
   }
 }
 
+@media (max-width: 991px) {
+  .navbar-collapse {
+    justify-content: flex-start;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
