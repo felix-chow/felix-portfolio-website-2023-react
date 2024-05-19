@@ -1,54 +1,51 @@
 import './App.css';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import { HashLink } from 'react-router-hash-link';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { ViewportProvider } from './components/ViewportContext';
+import ('bootstrap');
 
 const App = () => {
   return (
     <ViewportProvider>
-      <div>
-
-        <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: "#000000" }}>
-          <div className="container-fluid">
-            <a href="https://felix-chow.netlify.app/" rel="home"><img alt="" style={{ marginLeft: "100px" }} width="52" height="52" src="../images/Black-Pink-Bold-Elegant-Monogram-Personal-Brand-Logo-1-e1681776583474.png" /></a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="d-flex justify-content-end collapse navbar-collapse show" id="navbarWithDropdown">
-              <ul className="navbar-nav">
-                <li className="nav-item" style={{ marginRight: 50 }}>
-                  <HashLink smooth to={"/#home"} className="nav-link m-2" style={{ color: "white" }}>
-                    Home
-                  </HashLink>
-                </li>
-                <li className="nav-item dropdown m-2">
-                  <Link className="nav-link dropdown-toggle" style={{ marginRight: 150, color: "white", cursor: "pointer" }} to="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                    Projects
-                  </Link>
-
-                  <ul className="dropdown-menu" style={{ backgroundColor: "#000000" }} aria-labelledby="navbarDropdownMenuLink">
-                    <li><HashLink className="dropdown-item" smooth to={"/#web-dev"} style={{ color: "white" }}>
-                      Web Development
-                    </HashLink></li>
-                    <li><HashLink className="dropdown-item" smooth to={"/#ecommerce"} style={{ color: "white" }}>
-                      E-commerce Web Development
-                    </HashLink></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <div>
+      <Router>
+        <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="custom-navbar">
+          <Container>
+            <Navbar.Brand href="https://felix-chow.netlify.app/">
+              <img
+                alt="Logo"
+                src="../images/Black-Pink-Bold-Elegant-Monogram-Personal-Brand-Logo-1-e1681776583474.png"
+                width="52"
+                height="52"
+                className="d-inline-block align-top"
+                style={{ marginLeft: "100px" }}
+              />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="navbar-nav" />
+            <Navbar.Collapse id="navbar-nav">
+              <Nav className="ms-auto">
+                <Nav.Link as={HashLink} smooth to="/#home" style={{ color: 'white' }}>
+                  Home
+                </Nav.Link>
+                <NavDropdown title="Projects" id="navbarScrollingDropdown" style={{ color: 'white' }}>
+                  <NavDropdown.Item as={HashLink} smooth to="/#web-dev" style={{ color: 'white' }}>
+                    Web Development
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={HashLink} smooth to="/#ecommerce" style={{ color: 'black' }}>
+                    E-commerce Web Development
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
-      </div>
+      </Router>
     </ViewportProvider>
   );
 }
