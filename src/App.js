@@ -7,6 +7,7 @@ import './App.css'; // Ensure to import your custom CSS
 import Home from './components/Home';
 import Projects from './components/Projects';
 import { ViewportProvider } from './components/ViewportProvider';
+import BrandLogo from './assets/images/Black-Pink-Bold-Elegant-Monogram-Personal-Brand-Logo-1-e1681776583474.png';
 
 const App = () => {
   return (
@@ -17,11 +18,10 @@ const App = () => {
             <Navbar.Brand href="https://felix-chow.netlify.app/">
               <img
                 alt="Logo"
-                src="../images/Black-Pink-Bold-Elegant-Monogram-Personal-Brand-Logo-1-e1681776583474.png"
+                src={BrandLogo}
                 width="52"
                 height="52"
                 className="d-inline-block align-top"
-                style={{ marginLeft: "100px" }}
               />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbar-nav" />
