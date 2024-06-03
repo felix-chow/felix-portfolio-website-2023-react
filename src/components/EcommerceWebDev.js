@@ -17,7 +17,6 @@ const EcommerceWebDev = () => {
 
                 <Row className="text-align-center">
                     <Col md={{ span: 6 }} className="mb-3 mb-md-0">
-                        {/* <p style={{paddingRight: "300px"}}>Here’s an online dropshipping store, also on Shopify. The website allows consumers to shop, add to cart, and purchase using a payment method.</p> */}
                         <p>Here’s an online dropshipping store, also on Shopify. The website allows consumers to shop, add to cart, and purchase using a payment method.</p>
                     </Col>
                     <Col md={{ span: 6 }} className="mb-3 mb-md-0">
