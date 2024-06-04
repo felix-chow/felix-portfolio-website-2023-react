@@ -16,7 +16,7 @@ const WebDev = () => {
                     <img src={coffeeImage} alt="steaming coffee" className="steaming-coffee card rounded float-md-end" />
                 </Col>
                 <Col xs={12} md={4} className="mb-3 mb-md-0">
-                    <p>Here’s a sample of my work. Café Paradise is an online coffee shop on Shopify where customers can order coffee, donuts, and sandwiches. The website stores user-selected products into a shopping cart. After completing the checkout process, their order will be stored in the order history under their profile.</p>
+                    <p>Here’s a sample of my work. Café Paradise is an online coffee shop on Shopify where customers can order coffee, donuts, and sandwiches. The website stores user-selected products into a shopping cart, which is saved in the database. After completing the checkout and payment process, their order will be stored in the order history under their profile.</p>
                 </Col>
                 <Col xs={12} md={4} >
                     <img src={cafeMenu} alt="cafe paradise menu" className="cafe-menu card rounded float-md-end" />
